@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Food Express</title>
+    <!-- cdn font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <a href="" class="logo" data-aos="fade-down">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </a>
+      <nav class="navbar" data-aos="fade-down">
+        <a href="#home" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="chefs.html">Chefs</a>
+        <a href="review.html">Review</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- navbar buttons -->
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-card-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="search-form">
+          <input
+            type="text"
+            class="search-input"
+            id="search-box"
+            placeholder="search here..."
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="card-items-container">
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/Siciliani-pizza.png" alt="menu" />
+            <div class="content">
+              <h3>card item 01</h3>
+              <div class="price">$104.99/-</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/menu-1.png" alt="menu" />
+            <div class="content">
+              <h3>card item 02</h3>
+              <div class="price">$99.99/-</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/bolognese pasta.png" alt="menu" />
+            <div class="content">
+              <h3>card item 03</h3>
+              <div class="price">$49.99/-</div>
+            </div>
+          </div>
+          <div class="card-item kivi">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/kivi_juice.png" alt="menu" />
+            <div class="content">
+              <h3>card item 04</h3>
+              <div class="price">$15.99/-</div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">Checkout now</a>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home section start -->
+    <section class="home" id="home" data-aos="fade-down">
+      <div class="content">
+        <h3>Express Fast Food</h3>
+        <div class="home-content">
+          <p>
+            From 2008 we give the best service in worldwide and offer our
+            customers most delicious and tasty fast foods in town
+          </p>
+        </div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- Loader Spinner start -->
+    <div class="loader"></div>
+    <!-- Loader Spinner end -->
+
+    <!-- Menu section start -->
+    <section class="menu" id="menu" data-aos="fade-left">
+      <h1 class="heading">our <span>menu</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="./assets/images/Siciliani-pizza.png" alt="menu" />
+            <span class="menu-category">Pizza</span>
+            <h3>Siciliani Pizza</h3>
+            <div class="price">$104.99 <span>$119.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="./assets/images/menu-1.png" alt="menu" />
+            <span class="menu-category">Burger</span>
+            <h3>Chef's Burger</h3>
+            <div class="price">$99.99 <span>$109.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="./assets/images/bolognese pasta.png" alt="menu" />
+            <span class="menu-category">Pasta</span>
+            <h3>Bolognose Pasta</h3>
+            <div class="price">$49.99 <span>$59.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box kivi">
+          <div class="box-head">
+            <img src="./assets/images/kivi_juice.png" alt="menu" />
+            <span class="menu-category">Drink</span>
+            <h3>Kivi juice</h3>
+            <div class="price">$15.99 <span>$39.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img
+              src="./assets/images/flat-lay-box-fries-with-sauces_23-2148238517.jpg"
+              alt="menu"
+            />
+            <span class="menu-category">Potatoes Free</span>
+            <h3>Chef's special free</h3>
+            <div class="price">$19.99 <span>$29.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box kfc">
+          <div class="box-head">
+            <img src="./assets/images/kfc_wings_chicken.jpg" alt="menu" />
+            <span class="menu-category">KFC</span>
+            <h3>Chicken Wings</h3>
+            <div class="price">$25.99 <span>$35.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box nachos">
+          <div class="box-head">
+            <img src="./assets/images/nachos_mexican.jpg" alt="menu" />
+            <span class="menu-category">Mexican kitchen</span>
+            <h3>Mexican Nachos</h3>
+            <div class="price">$40.99 <span>$60.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="box cola">
+          <div class="box-head">
+            <img
+              src="./assets/images/soda-with-ice-transparent-glass-isolated-white_311158-3694.jpg"
+              alt="menu"
+            />
+            <span class="menu-category">Drink</span>
+            <h3>Chef's Special Cola</h3>
+            <div class="price">$12.99 <span>$22.99</span></div>
+          </div>
+          <div class="box-bottom">
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section end -->
+
+    <!--Products section start  -->
+    <section class="products" id="products" data-aos="fade-left">
+      <h1 class="heading">our <span>products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Dark Burger</span>
+            <a href="#" class="name">Dark Burger</a>
+          </div>
+          <div class="image">
+            <img src="./assets/images/product-2.png" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$12.00</b>
+              <span class="amount">220gr / 600 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box dark-bg">
+          <div class="box-head">
+            <span class="title">Double Dark Burger</span>
+            <a href="#" class="name">Double Dark</a>
+          </div>
+          <div class="image">
+            <img src="./assets/images/dark-product.jpg" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$24.00</b>
+              <span class="amount">440gr / 1200 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Sausage</span>
+            <a href="#" class="name">Hot Dog</a>
+          </div>
+          <div class="image">
+            <img
+              src="./assets/images/classic-hot-dog-with-ketchup-mustard-sauce-isolated-white-background_123827-29747.png"
+              alt=""
+            />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$6.00</b>
+              <span class="amount">150gr / 220 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Fry Foods</span>
+            <a href="#" class="name">Onion Rings</a>
+          </div>
+          <div class="image">
+            <img src="./assets/images/Onionringsfry.png" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$5.00</b>
+              <span class="amount">100gr / 120 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Turkish kitchen</span>
+            <a href="#" class="name">Çiğ köfte</a>
+          </div>
+          <div class="image">
+            <img src="./assets/images/turksihcogkofte.png" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$8.00</b>
+              <span class="amount">320gr / 700 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <span class="title">Mexican kitchen</span>
+            <a href="#" class="name">Mexican Taco</a>
+          </div>
+          <div class="image">
+            <img src="./assets/images/taco-mexican.jpg" alt="" />
+          </div>
+          <div class="box-bottom">
+            <div class="info">
+              <b class="price">$10.00</b>
+              <span class="amount">150gr / 300 Cal</span>
+            </div>
+            <div class="product-btn">
+              <a href="#">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Products section end  -->
+
+    <!-- About section start -->
+    <section class="about" id="about" data-aos="fade-left">
+      <h1 class="heading">about <span>us</span></h1>
+      <div class="row">
+        <div class="image">
+          <img src="./assets/images/abouts-us-3.jpg" alt="about" />
+        </div>
+        <div class="content">
+          <h3>What is the secret features of Our Cafe?</h3>
+          <p>
+            We are one of the largest restaurant chains in town and we work 24/7
+            to provide your with the best service. We have a other 5 branch
+            center of the city so it is equipped with high technologies and
+            items.Ours is open till morning 09.00 to a.m 12 midnight. You can
+            also order a membership card for our cafe.
+          </p>
+          <p>
+            We are well-known our kind workers with the highest quality and
+            fresh products which made-up in the oven by our chefs. We have big
+            discounts during the week and you can take advantage of them even if
+            adult/baby menues.Especially students benefit from 30% discount.Also
+            we offer free Wi-Fi to our lovely guests
+          </p>
+          <p>
+            From 2008 we gain a lot of special buyers and clients who almost
+            every day they visit our cafe.Your can find easily free places for
+            single or family.And have a relax time well-designed rooms and great
+            atmosphere.Live music also every weekend.So you can visit our
+            website and book the free table in advance benefit online discount
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Chef's section start -->
+    <section class="chefs" id="chefs" data-aos="fade-left">
+      <h1 class="heading">Our <span>Chefs</span></h1>
+      <div class="swiper mySwiper my_chefs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/chef1.jpg" alt="" />
+            <h1>
+              Alfonso Gabi
+              <div class="chef-flag">
+                <img
+                  src="./assets/images/Flag_of_Spain.svg.png"
+                  alt="spainflag"
+                />
+              </div>
+            </h1>
+            <h3>Experience:3 years</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/chef2.jpg" alt="" />
+            <h1>
+              Trend Tomas
+              <div class="chef-flag">
+                <img
+                  src="./assets/images/Flag_of_England.svg.png"
+                  alt="englandflag"
+                />
+              </div>
+            </h1>
+            <h3>Experience:5 years</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/chef3.png" alt="" />
+            <h1>
+              Lara Sweeney
+              <div class="chef-flag">
+                <img
+                  src="./assets/images/Flag_of_Sweden.svg.png"
+                  alt="sweedenflag"
+                />
+              </div>
+            </h1>
+            <h3>Experience:3.5 years</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/chef4.jpg" alt="sweedenflag" />
+            <h1>
+              Mehmet Aktürk
+              <div class="chef-flag">
+                <img
+                  src="./assets/images/Flag_of_Turkey.svg.png"
+                  alt="turkeyflag"
+                />
+              </div>
+            </h1>
+            <h3>Experience:1.5 years</h3>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    </section>
+    <!-- Chef's section end -->
+
+    <!-- Comments section start -->
+    <section class="review" id="review" data-aos="fade-left">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/images/quote.png" alt="quote" />
+          <p>
+            “Walked in for dinner in a Wednesday night and sat at the cafe. The
+            interior, waiter, couldn’t have been nicer. She was quick, efficient
+            and friendly. She helped recommend something for my dinner and the
+            me and my friend didn’t disappoint! I even returned the next morning
+            for breakfast and got similar service!"
+          </p>
+          <img src="./assets/images/avatar-1.png" alt="avatar" class="user" />
+          <h3>Jennifer Becker</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/quote.png" alt="quote" />
+          <p>
+            “Very good service, good menu … not overly extensive. Food was very
+            good quality all around. They know how to prepare home fries and
+            their omelets are top-notch. Prices were reasonable.“The absolute
+            best red sauce. Weather on Pizza or Pasta, it’s honestly delicious.
+            Portions are huge and the staff is extremely friendly"
+          </p>
+          <img src="./assets/images/avatar-2.png" alt="avatar" class="user" />
+          <h3>Andy Thomas</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/quote.png" alt="quote" />
+          <p>
+            “Delicious Lunch time! We ordered the dark burger, siciliani pizza,
+            and the bolognose pasta. All were absolutely delicious. Maddy, our
+            server, was super attentive, on top of it and funny. She made the
+            experience perfect.I'm gonna here with family next week.Would
+            definitely come back to this place!”
+          </p>
+          <img src="./assets/images/avatar-3.png" alt="avatar" class="user" />
+          <h3>Lisa Arambula</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comments section end -->
+
+    <!--Blogs section start -->
+    <section class="blogs" id="blogs" data-aos="fade-left">
+      <h1 class="heading">our <span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/blog-1.jpg" alt="blog1" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to we make burgers?</a>
+            <span>By admin / 10st may, 2020</span>
+            <p>
+              The perfect burger is a very personal matter - the seasoning and
+              the garnish are all down to you, but for tender meat, and an
+              intensely savoury flavour
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/blog-2.jpg" alt="blog-2" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Which flavours we add burger?</a>
+            <span>By Staff / 15st march, 2021</span>
+            <p>
+              To source these ingredients, we recommend checking out your local
+              options, be that at the farmer’s market or the local section of
+              your grocery store
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/Slice-of-pizza-1200x853.jpg" alt="blog-3" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">What is difference of our pizzas?</a>
+            <span>By Admin / 21st july, 2022</span>
+            <p>
+              Pizza is one of the best ways to celebrate in-season produce. For
+              example, tender greens in spring, fresh tomatoes in
+              summer.Especially add some ingredients
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Blogs section end  -->
+
+    <!-- Contact section start -->
+    <section class="contact" id="contact" data-aos="fade-left">
+      <h1 class="heading">contact <span>us</span></h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19206.318534973943!2d-74.0026087713473!3d40.70027921257583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2zQnJ1a2xpbiwgTnl1IFlvcmssIEFtZXJpa2EgQmlybMmZxZ9tacWfIMWedGF0bGFyxLE!5e0!3m2!1saz!2saz!4v1711008958191!5m2!1saz!2saz"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form action="">
+          <h3>Get in touch</h3>
+          <div class="inputBox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="message" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-phone"></i>
+            <input type="text" placeholder="phone" />
+          </div>
+          <input type="submit" class="btn" value="Contact Now" />
+        </form>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Search" />
+        <button class="btn btn-priamry">search</button>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/kamran.bayramov.bayramov13/"
+          class="fab fa-facebook"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.instagram.com/bayram.k66/"
+          class="fab fa-instagram"
+          target="_blank"
+        ></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a
+          href="https://www.facebook.com/kamran.bayramov.bayramov13/"
+          class="fab fa-linkedin"
+          target="_blank"
+        ></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+      <div class="links">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#Chefs">Chefs</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        created by <a href="https://github.com/bayramov66">Kamran Bayramov</a> |
+        All rights reserved
+      </div>
+    </section>
+    <!-- Footer end -->
+
+    <!-- Swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Auto Swiper  -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".my_chefs", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

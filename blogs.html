@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blogs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS start -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS end -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <a href="" class="logo" data-aos="fade-down">
+        <img src="./assets/images/logo.png" alt="logo" />
+      </a>
+      <nav class="navbar" data-aos="fade-down">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="chefs.html">Chefs</a>
+        <a href="review.html">Review</a>
+        <a href="#blogs" class="active">Blogs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- navbar buttons -->
+      <div class="buttons">
+        <button id="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <button id="shopping-card-btn">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="search-form">
+          <input
+            type="text"
+            class="search-input"
+            id="search-box"
+            placeholder="search here..."
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="card-items-container">
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/Siciliani-pizza.png" alt="menu" />
+            <div class="content">
+              <h3>card item 01</h3>
+              <div class="price">$15.99/-</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/menu-1.png" alt="menu" />
+            <div class="content">
+              <h3>card item 01</h3>
+              <div class="price">$15.99/-</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/bolognese pasta.png" alt="menu" />
+            <div class="content">
+              <h3>card item 01</h3>
+              <div class="price">$15.99/-</div>
+            </div>
+          </div>
+          <div class="card-item">
+            <i class="fas fa-times"></i>
+            <img src="./assets/images/kivi_juice.png" alt="menu" />
+            <div class="content">
+              <h3>card item 01</h3>
+              <div class="price">$15.99/-</div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">Checkout now</a>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!--Blogs section start -->
+    <section class="blogs" id="blogs" data-aos="fade-left">
+      <h1 class="heading">our <span>blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/blog-1.jpg" alt="blog1" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">How to we make burgers?</a>
+            <span>By admin / 10st may, 2020</span>
+            <p>
+              The perfect burger is a very personal matter - the seasoning and
+              the garnish are all down to you, but for tender meat, and an
+              intensely savoury flavour
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/blog-2.jpg" alt="blog-2" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Which flavours we add burger?</a>
+            <span>By Staff / 15st march, 2021</span>
+            <p>
+              To source these ingredients, we recommend checking out your local
+              options, be that at the farmer’s market or the local section of
+              your grocery store
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="assets/images/Slice-of-pizza-1200x853.jpg" alt="blog-3" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">What is difference of our pizzas?</a>
+            <span>By Admin / 21st july, 2022</span>
+            <p>
+              Pizza is one of the best ways to celebrate in-season produce. For
+              example, tender greens in spring, fresh tomatoes in
+              summer.Especially add some ingredients
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Blogs section end  -->
+
+    <!-- Footer start -->
+    <section class="footer">
+      <div class="search">
+        <input type="text" class="search-input" placeholder="Search" />
+        <button class="btn btn-priamry">search</button>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#chefs">Chefs</a>
+        <a href="#review">Review</a>
+        <a href="#blogs" class="active">Blogs</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        created by <a href="https://github.com/bayramov66">Kamran Bayramov</a> |
+        All rights reserved
+      </div>
+    </section>
+    <!-- Footer end -->
+
+    <!-- AOS start -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+    <!-- AOS end -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
