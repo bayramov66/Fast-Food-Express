@@ -44,7 +44,7 @@ body {
 }
 
 section {
-  padding: 9rem 7%;
+  padding: 4rem 7%;
 }
 a {
   color: var(--black-color);
@@ -792,7 +792,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 .footer .links a {
@@ -813,6 +813,7 @@ a {
   font-size: 2rem;
   color: #fff;
   font-weight: 300;
+  padding-top: 1rem;
 }
 
 .footer .credit a {
