@@ -758,6 +758,7 @@ a {
 .footer {
   background-color: var(--black-color);
   text-align: center;
+  height: 33rem;
 }
 .footer .search {
   display: flex;
@@ -792,7 +793,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 .footer .links a {
   background-color: var(--main-color);
@@ -946,6 +947,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .footer .credit{
+    font-size: 1.8rem;
+    padding: 1rem;
   }
 }
 
