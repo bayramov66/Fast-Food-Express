@@ -758,7 +758,6 @@ a {
 .footer {
   background-color: var(--black-color);
   text-align: center;
-  height: 35rem;
 }
 .footer .search {
   display: flex;
@@ -794,6 +793,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.8rem;
+  margin-bottom: 1rem;
 }
 .footer .links a {
   background-color: var(--main-color);
@@ -813,8 +813,6 @@ a {
   font-size: 2rem;
   color: #fff;
   font-weight: 300;
-  padding-top: 1rem;
-
 }
 
 .footer .credit a {
@@ -948,9 +946,9 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .footer .credit{
+  .footer .credit a {
     font-size: 1.8rem;
-    padding: 1.2rem;
+    margin-top: 1rem;
   }
 }
 
